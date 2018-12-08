@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The stuff</title>
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="components/tabs/tabs.css" rel="stylesheet" type="text/css">
+    <link href="components/modal/modal.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="dashboard-body">
+
+    <button @click="modal({name:'TabbedModal'})">I love modals!</button>
+    <!--<template v-for="(child, index) in children">-->
+        <!--<component :is="child" :key="child.name" @modal-open="modal" @modal-close="closeCallback" v-show="index === (children.length - 1)"></component>-->
+    <!--</template>-->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+<script type="text/javascript" src="components/tabs/tabs.js"></script>
+<script type="text/javascript" src="components/modal/tabbedModal.js"></script>
+<script type="text/javascript" src="components/modal/modal.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+</body>
+</html>

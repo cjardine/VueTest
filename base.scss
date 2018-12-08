@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  padding: 10px;
+}
+
+button {
+  background: #17A9E1;
+  border: 1px solid #999;
+  border-radius: 0;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+button:disabled {
+  background: #999;
+  color: #ddd;
+}
+
+p {
+  margin: 1em 0;
+}
+
+.two-column {
+  display: flex;
+  flex-direction: row;
+
+  > :first-child,
+  > :last-child {
+    flex: 1 1 auto;
+  }
+
+  > :last-child {
+    text-align: right;
+  }
+
+  &.two-column-left {
+    > :last-child {
+      flex: 0 0 auto;
+    }
+
+  }
+}
+
+
+.two-row {
+  display: flex;
+  flex-direction: column;
+
+  > :first-child,
+  > :last-child {
+    flex: 1 1 auto;
+  }
+
+  &.two-row-top > :last-child {
+    flex: 0 0 auto;
+  }
+}
+
